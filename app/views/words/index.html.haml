@@ -1,11 +1,12 @@
 %h1 Wordsmark
-%button{id: 'practice-btn'} Practice
 %ul
   - @words.each do |word|
     %li= word.word
 
+%button{id: 'practice-btn'} Practice
 %div{id: 'practice-wrapper'}
   %div{id: 'result-wrapper'}
   %div{id: 'word-wrapper'}
   %div{id: 'translation-wrapper'}
-    %input{placeholder: 'translation ...'}
+    %input{id: 'translation-input', placeholder: 'translation ...'}
+  %div{id: 'finish-wrapper'}
