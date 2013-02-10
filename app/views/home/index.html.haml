@@ -1,0 +1,8 @@
+%h1 Wordsmark
+%a{title: 'List of your saved words', href: words_path} My Words
+
+= form_tag words_path do
+
+  = label :word, :word, 'Word'
+  = text_field :word, 'word'
+  = submit_tag 'Save'
