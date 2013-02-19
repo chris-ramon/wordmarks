@@ -2,7 +2,6 @@
 require 'open-uri'
 require 'cgi'
 require 'json'
-require 'debugger'
 
 module Google
 
