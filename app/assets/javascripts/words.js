@@ -18,20 +18,24 @@ window.Wordmark = {
     bindEvents: function (){
         // bindings.
         this.config.practice_btn.on('click', this.initialize_practice);
-        this.config.translation_input.on('keyup', this.verify_translation);
     },
     // bindings functions.
     initialize_practice: function () {
         var self = Wordmark;
+
         self.words = self.get_words();
         self.current_word_index = 0;
+
         // cleaning dom wrappers
         self.config.result_wrapper.html('');
         self.config.finish_wrapper.html('');
-        // end cleaning dom wrappers
+
         self.set_word();
+
+        self.config.translation_input.on('keyup', self.verify_translation);
     },
     set_word: function() {
+        // get a word from self.words and injects it to the dom
         var i = this.current_word_index;
         var words_size = this.words.length;
         if (i < words_size) {
@@ -48,6 +52,8 @@ window.Wordmark = {
     // verifying if the translation from the input
     // is correct
     verify_translation: function (e) {
+        if (e.keyCode < 65 || e.keyCode > 90)
+            return;
         var self = Wordmark;
         var _translations = self.current_word_translations;
 
