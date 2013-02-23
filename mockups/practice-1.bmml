@@ -1,0 +1,21 @@
+<mockup version="1.0" skin="sketch" measuredW="1136" measuredH="704" mockupW="960" mockupH="690">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="176" y="14" w="960" h="690" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="__group__" x="382" y="236" w="617" h="270" measuredW="617" measuredH="270" zOrder="1" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::VRule" x="0" y="150" w="-1" h="-1" measuredW="5" measuredH="100" zOrder="0" locked="false" isInGroup="13"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="161" y="0" w="-1" h="-1" measuredW="227" measuredH="85" zOrder="1" locked="false" isInGroup="13">
+          <controlProperties>
+            <size>72</size>
+            <text>Vetted</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::HRule" x="0" y="265" w="617" h="-1" measuredW="100" measuredH="5" zOrder="2" locked="false" isInGroup="13"/>
+      </groupChildrenDescriptors>
+    </control>
+  </controls>
+</mockup>
