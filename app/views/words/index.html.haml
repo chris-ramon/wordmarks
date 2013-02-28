@@ -1,12 +1,22 @@
-%h1 Wordsmark
-%ul
-  - @words.each do |word|
-    %li= word.word
+%button{id: 'practice-btn', class: 'btn btn-info'}
+  %i{class: 'icon-play icon-white'}
+  Practice
 
-%button{id: 'practice-btn'} Practice
-%div{id: 'practice-wrapper'}
-  %div{id: 'result-wrapper'}
-  %div{id: 'word-wrapper'}
-  %div{id: 'translation-wrapper'}
+%ul{id: 'words_ul'}
+  - @user_word.each do |user_word|
+    %li{class: 'pull-left'}= user_word.word.word
+
+%div{id: 'practice-wrapper', class:'row-fluid'}
+  %div{class:'row-fluid'}
+    %div{id: 'result-wrapper'}
+
+  %div{class:'row-fluid'}
+    %div{id: 'word-wrapper'}
+
+  %div{class:'row-fluid'}
     %input{id: 'translation-input', placeholder: 'translation ...'}
-  %div{id: 'finish-wrapper'}
+
+  %div{class:'row-fluid'}
+    %div{id: 'finish-wrapper', class: 'span2 alert alert-info'}
+      %p Practice Finished !
+      %button{id: 'practice-btn', class:'btn'} Practice Again

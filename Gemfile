@@ -20,6 +20,7 @@ end
 
 gem 'jquery-rails'
 gem 'haml'
+gem 'devise'
 
 group :development, :test do
   gem 'sqlite3'
